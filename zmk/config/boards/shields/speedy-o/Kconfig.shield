@@ -1,0 +1,5 @@
+config SHIELD_SPEEDY_O_LEFT
+    def_bool $(shields_list_contains,speedy_o_left)
+
+config SHIELD_SPEEDY_O_RIGHT
+    def_bool $(shields_list_contains,speedy_o_right)

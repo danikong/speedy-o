@@ -1,0 +1,12 @@
+file_format: "1"
+id: speedy_o
+name: Speedy-O
+type: shield
+url: https://github.com/danikong/speedy-o-flipper
+requires: [pro_micro]
+features:
+  - keys
+  - underglow
+siblings:
+  - speedy_o_left
+  - speedy_o_right
