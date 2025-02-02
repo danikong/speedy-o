@@ -1,11 +1,10 @@
 #include "speedy_o.dtsi"
 
-// | 0.20 | 0.22 | 0.24 | 1.15 | 1.13 | 1.11 |   | 1.11 | 1.13 | 1.15 | 0.24 | 0.22 | 0.20 |
 &default_kscan {
     col-gpios = <&gpio0 20 GPIO_ACTIVE_HIGH>,
                 <&gpio0 22 GPIO_ACTIVE_HIGH>,
                 <&gpio0 24 GPIO_ACTIVE_HIGH>,
                 <&gpio1 15 GPIO_ACTIVE_HIGH>,
-                <&gpio1 13 GPIO_ACTIVE_HIGH>;
+                <&gpio1 13 GPIO_ACTIVE_HIGH>,
                 <&gpio1 11 GPIO_ACTIVE_HIGH>;
 };

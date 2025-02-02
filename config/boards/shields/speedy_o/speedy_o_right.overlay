@@ -5,7 +5,8 @@
 };
 
 &default_kscan {
-    col-gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>,
+    col-gpios = <&gpio1 11s GPIO_ACTIVE_HIGH>,
+                <&gpio1 13 GPIO_ACTIVE_HIGH>,
                 <&gpio1 15 GPIO_ACTIVE_HIGH>,
                 <&gpio0 24 GPIO_ACTIVE_HIGH>,
                 <&gpio0 22 GPIO_ACTIVE_HIGH>,
