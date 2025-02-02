@@ -38,5 +38,13 @@ RC(4,0) RC(4,1)         RC(4,3) RC(4,4) RC(4,5)    RC(4,6) RC(4,7) RC(4,8)      
                     <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // P 1.00
                     <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // P 0.10
     };
-};
 
+    /* 🎨 WS2812 LED Strip Configuration */
+    ws2812_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-gpio";
+        label = "LED_STRIP";
+        chain-length = <12>;  // Adjust for the number of LEDs
+        color-order = "GRB";
+        gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;  // Use P0.02 for LED data
+    };
+};
