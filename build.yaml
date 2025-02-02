@@ -21,5 +21,7 @@
 include:
   - board: nrf52840_m2
     shield: speedy_o_left
+    cmake-args: -DBOARD_ROOT=./config
   - board: nrf52840_m2
     shield: speedy_o_right
+    cmake-args: -DBOARD_ROOT=./config
