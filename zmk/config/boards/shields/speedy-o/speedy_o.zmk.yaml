@@ -2,7 +2,7 @@ file_format: "1"
 id: speedy_o
 name: Speedy-O
 type: shield
-url: https://github.com/danikong/speedy-o-flipper
+url: https://github.com/danikong/speedy-o
 requires: [pro_micro]
 features:
   - keys
