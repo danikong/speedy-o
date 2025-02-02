@@ -4,11 +4,8 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    defaults:
-      run:
-        working-directory: zmk  # Sets the working directory to 'zmk' for all run steps
     with:
-    #   build_matrix_path: "zmk/build.yaml"
-    #   config_path: "zmk/config"
+      build_matrix_path: "zmk/build.yaml"
+      config_path: "zmk/config"
       archive_name: "speedy_o_firmware"
     
