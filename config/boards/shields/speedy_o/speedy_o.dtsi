@@ -4,8 +4,9 @@
 / {
     chosen {
         zmk,kscan = &default_kscan;
-        zmk,matrix_transform = &default_transform;
-        zmk,underglow = &led_underglow;
+        //zmk,underglow = &led_underglow;
+        zmk,physical-layout = &speedy_o_layout;
+
     };
 
 
@@ -40,15 +41,19 @@ RC(4,0) RC(4,1)         RC(4,3) RC(4,4) RC(4,5)    RC(4,6) RC(4,7) RC(4,8)      
                     <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // P 1.00
                     <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // P 0.10
     };
-
-    led_underglow: ws2812 {
-        compatible = "worldsemi,ws2812-gpio";
-        chain-length = <27>;
-        color-mapping = <LED_COLOR_ID_GREEN 
-                        LED_COLOR_ID_RED 
-                        LED_COLOR_ID_BLUE>;
-        in-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
-        #address-cells = <1>;
-        #size-cells = <0>;
-    };
 };
+
+&speedy_o_layout{
+    transform = <&default_transform>;
+};
+
+//led_underglow: ws2812 {
+//    compatible = "worldsemi,ws2812-gpio";
+//    chain-length = <27>;
+//    color-mapping = <LED_COLOR_ID_GREEN 
+//                    LED_COLOR_ID_RED 
+//                    LED_COLOR_ID_BLUE>;
+//    in-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+//    #address-cells = <1>;
+//    #size-cells = <0>;
+//};
