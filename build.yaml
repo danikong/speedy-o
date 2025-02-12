@@ -21,16 +21,16 @@
 include:
   - board: nrf52840_m2
     shield: speedy_o_left
-    # cmake-args: -DBOARD_ROOT=./config #-DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DBOARD_ROOT=./config #-DCONFIG_ZMK_STUDIO=y
     # TODO: REMOVE THIS LATER-------------------------
     # shield: tester_pro_micro
     # snippet: zmk-usb-logging
   - board: nrf52840_m2
     shield: speedy_o_right
-    # cmake-args: -DBOARD_ROOT=./config #-DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DBOARD_ROOT=./config #-DCONFIG_ZMK_STUDIO=y
     # TODO: REMOVE THIS LATER-------------------------
     # shield: tester_pro_micro
     # snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: settings_reset
-    # cmake-args: -DBOARD_ROOT=./config
+    cmake-args: -DBOARD_ROOT=./config
