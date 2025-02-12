@@ -25,7 +25,7 @@
     behaviors {
         space_layer: space_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_LAYER";
+            // label = "SPACE_LAYER";
             #binding-cells = <2>;
             tapping-term-ms = <160>;
             quick-tap-ms = <0>;
@@ -36,7 +36,7 @@
       // Double tap for cmd+space - set as raycast
       td_cmd_spc: tap_dance_cmd_spc {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_CMD_SPACE";
+            // label = "TAP_DANCE_CMD_SPACE";
             #binding-cells = <0>;
             tapping-term-ms = <165>;
             bindings = <&kp LGUI>, <&kp LG(SPACE)>;
@@ -45,7 +45,7 @@
       // used with rectangle for window management
       hm_opt_copt: homerow_mods_opt_ctrlopt {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_OPT_CTRLOPT";
+            // label = "HOMEROW_MODS_OPT_CTRLOPT";
             #binding-cells = <2>;
             tapping-term-ms = <165>;
             quick-tap-ms = <0>;
@@ -56,7 +56,7 @@
       // Backpsace preferred, held for Ctrl
         bspc_ctrl: backspace_ctrl {
             compatible = "zmk,behavior-hold-tap";
-            label = "BACKSPACE_CTRL";
+            // label = "BACKSPACE_CTRL";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
@@ -66,7 +66,7 @@
 
         bspc_ctrl_td: backspace_ctrl_tapdance {
             compatible = "zmk,behavior-tap-dance";
-            label = "BACKSPACE_CTRL_TAPDANCE";
+            // label = "BACKSPACE_CTRL_TAPDANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&bspc_ctrl LCTRL BSPC>, <&kp LA(SPACE)>;
@@ -74,7 +74,7 @@
 
         esc_hyper: esc_hyper {
             compatible = "zmk,behavior-hold-tap";
-            label = "ESC_HYPER";
+            // label = "ESC_HYPER";
             #binding-cells = <2>;
             tapping-term-ms = <160>;
             quick-tap-ms = <0>;
