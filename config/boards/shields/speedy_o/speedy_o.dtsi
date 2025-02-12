@@ -5,8 +5,7 @@
     chosen {
         zmk,kscan = &default_kscan;
         //zmk,underglow = &led_underglow;
-        zmk,physical-layout = &speedy_o_layout;
-
+        //zmk,physical-layout = &speedy_o_layout;
     };
 
 
@@ -43,9 +42,9 @@ RC(4,0) RC(4,1)         RC(4,3) RC(4,4) RC(4,5)    RC(4,6) RC(4,7) RC(4,8)      
     };
 };
 
-&speedy_o_layout{
-    transform = <&default_transform>;
-};
+//&speedy_o_layout{
+//    transform = <&default_transform>;
+//};
 
 //led_underglow: ws2812 {
 //    compatible = "worldsemi,ws2812-gpio";
