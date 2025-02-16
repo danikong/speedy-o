@@ -21,7 +21,7 @@
 include:
   - board: nrf52840_m2
     shield: speedy_o_left
-    cmake-args: -DBOARD_ROOT=./config #-DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DBOARD_ROOT=./config -DCONFIG_ZMK_STUDIO=y
     # TODO: REMOVE THIS LATER-------------------------
     # shield: tester_pro_micro
     # snippet: zmk-usb-logging
