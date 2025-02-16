@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
+    speedy_o_layout: speedy_o_layout {
         compatible = "zmk,physical-layout";
         display-name = "Speedy-O";
 
